@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>Shop All Pet Supplies | PawHaven — Dogs, Cats, Birds & More</title>
+  <meta name="description" content="Browse 1,200+ premium pet products at PawHaven. Shop food, toys, accessories, and grooming supplies for dogs, cats, birds, and small animals. Free shipping on $35+." />
+  <meta name="keywords" content="buy pet supplies online, dog toys, cat food, bird cage accessories, small animal bedding, pet accessories store, cheap pet supplies" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://pawhaven.store/products.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Shop All Pet Supplies | PawHaven" />
+  <meta property="og:description" content="1,200+ vet-approved pet products. Free shipping on $35+." />
+  <meta property="og:url"         content="https://pawhaven.store/products.html" />
+  <meta property="og:image"       content="https://pawhaven.store/img/og-products.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data: ItemList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Shop All Pet Supplies",
+    "description": "Browse our full catalog of premium pet supplies for dogs, cats, birds, and small animals.",
+    "url": "https://pawhaven.store/products.html",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pawhaven.store/" },
+        { "@type": "ListItem", "position": 2, "name": "Shop All", "item": "https://pawhaven.store/products.html" }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <div class="navbar__inner">
+          <a class="navbar__logo" href="index.html" aria-label="PawHaven Home">🐾 Paw<span>Haven</span></a>
+          <ul class="navbar__links" role="menubar">
+            <li><a href="index.html" role="menuitem">Home</a></li>
+            <li><a href="products.html" class="active" role="menuitem">Shop All</a></li>
+            <li><a href="products.html?cat=dogs" role="menuitem">Dogs</a></li>
+            <li><a href="products.html?cat=cats" role="menuitem">Cats</a></li>
+            <li><a href="about.html" role="menuitem">About</a></li>
+            <li><a href="contact.html" role="menuitem">Contact</a></li>
+          </ul>
+          <div class="navbar__actions">
+            <form class="navbar__search" role="search" action="products.html" method="get">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              <input type="search" name="q" placeholder="Search products…" aria-label="Search products" />
+            </form>
+            <button class="navbar__icon-btn" aria-label="Wishlist">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <button class="navbar__icon-btn" aria-label="Cart" id="cart-btn">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              <span class="navbar__cart-count" id="cart-count" aria-live="polite">0</span>
+            </button>
+            <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="navbar__mobile-menu" id="mobile-menu" role="menu">
+        <a href="index.html" role="menuitem">🏠 Home</a>
+        <a href="products.html" role="menuitem">🛍️ Shop All</a>
+        <a href="products.html?cat=dogs" role="menuitem">🐶 Dogs</a>
+        <a href="products.html?cat=cats" role="menuitem">🐱 Cats</a>
+        <a href="about.html" role="menuitem">💚 About Us</a>
+        <a href="contact.html" role="menuitem">📬 Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span aria-current="page">Shop All</span>
+        </nav>
+        <h1 class="page-hero__title" id="page-title">Shop All Pet Supplies</h1>
+        <p class="page-hero__subtitle">Over 1,200 vet-approved products for every pet in your family</p>
+      </div>
+    </section>
+
+    <!-- Catalog -->
+    <div class="container">
+      <div class="catalog-layout">
+
+        <!-- Sidebar Filters -->
+        <aside class="sidebar" aria-label="Product filters">
+
+          <div class="sidebar__card">
+            <h2 class="sidebar__title">Pet Type</h2>
+            <div class="filter-group" role="group" aria-label="Filter by pet type">
+              <label class="filter-option"><input type="checkbox" checked /> Dogs <span class="filter-count">320</span></label>
+              <label class="filter-option"><input type="checkbox" checked /> Cats <span class="filter-count">280</span></label>
+              <label class="filter-option"><input type="checkbox" checked /> Birds <span class="filter-count">140</span></label>
+              <label class="filter-option"><input type="checkbox" checked /> Small Animals <span class="filter-count">90</span></label>
+              <label class="filter-option"><input type="checkbox" /> Fish & Aquatic <span class="filter-count">45</span></label>
+            </div>
+          </div>
+
+          <div class="sidebar__card">
+            <h2 class="sidebar__title">Category</h2>
+            <div class="filter-group" role="group" aria-label="Filter by category">
+              <label class="filter-option"><input type="checkbox" /> Food & Treats <span class="filter-count">410</span></label>
+              <label class="filter-option"><input type="checkbox" /> Toys <span class="filter-count">230</span></label>
+              <label class="filter-option"><input type="checkbox" /> Grooming <span class="filter-count">180</span></label>
+              <label class="filter-option"><input type="checkbox" /> Beds & Furniture <span class="filter-count">120</span></label>
+              <label class="filter-option"><input type="checkbox" /> Collars & Leashes <span class="filter-count">95</span></label>
+              <label class="filter-option"><input type="checkbox" /> Health & Wellness <span class="filter-count">85</span></label>
+              <label class="filter-option"><input type="checkbox" /> Travel & Outdoors <span class="filter-count">75</span></label>
+            </div>
+          </div>
+
+          <div class="sidebar__card">
+            <h2 class="sidebar__title">Price Range</h2>
+            <div class="price-range">
+              <input type="range" min="0" max="200" value="200" id="price-range" aria-label="Maximum price" />
+              <div class="price-range-labels">
+                <span>$0</span>
+                <span id="price-display">Up to $200</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar__card">
+            <h2 class="sidebar__title">Rating</h2>
+            <div class="filter-group" role="group" aria-label="Filter by rating">
+              <label class="filter-option"><input type="radio" name="rating" /> <span style="color:#F6C740">★★★★★</span> 5 stars</label>
+              <label class="filter-option"><input type="radio" name="rating" checked /> <span style="color:#F6C740">★★★★</span>+ 4 stars & up</label>
+              <label class="filter-option"><input type="radio" name="rating" /> <span style="color:#F6C740">★★★</span>+ 3 stars & up</label>
+            </div>
+          </div>
+
+          <div class="sidebar__card">
+            <h2 class="sidebar__title">Special Offers</h2>
+            <div class="filter-group" role="group" aria-label="Filter by offers">
+              <label class="filter-option"><input type="checkbox" /> On Sale</label>
+              <label class="filter-option"><input type="checkbox" /> Free Shipping</label>
+              <label class="filter-option"><input type="checkbox" /> New Arrivals</label>
+              <label class="filter-option"><input type="checkbox" /> Bestsellers</label>
+            </div>
+          </div>
+
+          <button class="btn btn-outline-teal" style="width:100%;justify-content:center;" onclick="clearFilters()">
+            Clear All Filters
+          </button>
+        </aside>
+
+        <!-- Product Grid -->
+        <section aria-labelledby="products-list-heading">
+          <div class="catalog-toolbar">
+            <p class="catalog-toolbar__count" aria-live="polite" id="products-count">Showing <strong>875</strong> products</p>
+            <label for="sort-select" class="visually-hidden">Sort products by</label>
+            <select class="catalog-toolbar__sort" id="sort-select" aria-label="Sort products">
+              <option value="popular">Most Popular</option>
+              <option value="newest">Newest First</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+            </select>
+          </div>
+
+          <h2 id="products-list-heading" class="visually-hidden">Product Listing</h2>
+
+          <div class="products__grid" role="list" aria-label="All products" id="products-grid">
+
+            <!-- Product 1 -->
+            <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+              <div class="product-card__img-wrap">
+                <div aria-hidden="true" style="font-size:5rem;display:flex;align-items:center;justify-content:center;width:100%;height:100%">🦮</div>
+                <div class="product-card__badges"><span class="badge badge-best">Bestseller</span></div>
+                <button class="product-card__wishlist" aria-label="Wishlist"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Dogs · Harnesses</div>
+                <h3 class="product-card__name" itemprop="name">Comfort Harness Pro</h3>
+                <div class="product-card__stars"><span class="stars">★★★★★</span> 4.9 (2,341)</div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$24.99</span>
+                  <span class="product-card__compare">$39.99</span>
+                  <span class="product-card__discount">−38%</span>
+                </div>
+                <button class="btn btn-primary btn-sm product-card__add" onclick="addToCart(this,'Comfort Harness Pro')">Add to Cart</button>
+              </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+              <div class="product-card__img-wrap">
+                <div aria-hidden="true" style="font-size:5rem;display:flex;align-items:center;justify-content:center;width:100%;height:100%">🧶</div>
+                <div class="product-card__badges"><span class="badge badge-new">New</span></div>
+                <button class="product-card__wishlist" aria-label="Wishlist"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Cats · Toys</div>
+                <h3 class="product-card__name" itemprop="name">Interactive Feather Wand XL</h3>
+                <div class="product-card__stars"><span class="stars">★★★★★</span> 4.8 (1,087)</div>
+                <div class="product-card__pricing"><span class="product-card__price">$14.99</span></div>
+                <button class="btn btn-primary btn-sm product-card__add" onclick="addToCart(this,'Feather Wand XL')">Add to Cart</button>
+              </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+              <div class="product-card__img-wrap">
+                <div aria-hidden="true" style="font-size:5rem;display:flex;align-items:center;justify-content:center;width:100%;height:100%">🍖</div>
+                <div class="product-card__badges"><span class="badge badge-sale">Sale</span></div>
+                <button class="product-card__wishlist" aria-label="Wishlist"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Dogs · Treats</div>
+                <h3 class="product-card__name" itemprop="name">Grain-Free Dog Treats (12oz)</h3>
+                <div class="product-card__stars"><span class="stars">★★★★★</span> 4.9 (3,892)</div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$12.99</span>
+                  <span class="product-card__compare">$18.99</span>
+                  <span class="product-card__discount">−32%</span>
+                </div>
+                <button class="btn btn-primary btn-sm product-card__add" onclick="addToCart(this,'Dog Treats')">Add to Cart</button>
+              </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+              <div class="product-card__img-wrap">
+                <div aria-hidden="true" style="font-size:5rem;display:flex;align-items:center;justify-content:center;width:100%;height:100%">🛁</div>
+                <button class="product-card__wishlist" aria-label="Wishlist"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">All Pets · Grooming</div>
+                <h3 class="product-card__name" itemprop="name">Self-Cleaning Slicker Brush</h3>
+                <div class="product-card__stars"><span class="stars">★★★★½</span> 4.7 (654)</div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$19.99</span>
+                  <span class="product-card__compare">$29.99</span>
+                  <span class="product-card__discount">−33%</span>
+                </div>
+                <button class="btn btn-primary btn-sm product-card__add" onclick="addToCart(this,'Slicker Brush')">Add to Cart</button>
+              </div>
+            </article>
+
+            <!-- Product 5 -->
+            <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+              <div class="product-card__img-wrap">
+                <div aria-hidden="true" style="font-size:5rem;display:flex;align-items:center;justify-content:center;width:100%;height:100%">🛏️</div>
+                <div class="product-card__badges"><span class="badge badge-best">Bestseller</span></div>
+                <button class="product-card__wishlist" aria-label="Wishlist"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Dogs & Cats · Beds</div>
+                <h3 class="product-card__name" itemprop="name">Orthopedic Memory Foam Pet Bed</h3>
+                <div class="product-card__stars"><span class="stars">★★★★★</span> 4.9 (1,204)</div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$49.99</span>
+                  <span class="product-card__compare">$74.99</span>
+                  <span class="product-card__discount">−33%</span>
+                </div>
+                <button class="btn btn-primary btn-sm product-card__add" onclick="addToCart(this,'Memory Foam Bed')">Add to Cart</button>
+              </div>
+            </article>
+
+            <!-- Product 6 -->
+            <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+              <div class="product-card__img-wrap">
+                <div aria-hidden="true" style="font-size:5rem;display:flex;align-items:center;justify-content:center;width:100%;height:100%">🐦</div>
+                <div class="product-card__badges"><span class="badge badge-new">New</span></div>
+                <button class="product-card__wishlist" aria-label="Wishlist"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Birds · Toys</div>
+                <h3 class="product-card__name" itemprop="name">Parrot Foraging Activity Kit</h3>
+                <div class="product-card__stars"><span class="stars">★★★★★</span> 4.8 (312)</div>
+                <div class="product-card__pricing"><span class="product-card__price">$22.99</span></div>
+                <button class="btn btn-primary btn-sm product-card__add" onclick="addToCart(this,'Parrot Activity Kit')">Add to Cart</button>
+              </div>
+            </article>
+
+            <!-- Product 7 -->
+            <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+              <div class="product-card__img-wrap">
+                <div aria-hidden="true" style="font-size:5rem;display:flex;align-items:center;justify-content:center;width:100%;height:100%">🏠</div>
+                <div class="product-card__badges"><span class="badge badge-sale">Sale</span></div>
+                <button class="product-card__wishlist" aria-label="Wishlist"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Small Animals · Housing</div>
+                <h3 class="product-card__name" itemprop="name">Hamster & Guinea Pig Habitat Kit</h3>
+                <div class="product-card__stars"><span class="stars">★★★★★</span> 4.6 (445)</div>
+                <div class="product-card__pricing">
+                  <span class="product-card__price">$34.99</span>
+                  <span class="product-card__compare">$54.99</span>
+                  <span class="product-card__discount">−36%</span>
+                </div>
+                <button class="btn btn-primary btn-sm product-card__add" onclick="addToCart(this,'Hamster Habitat Kit')">Add to Cart</button>
+              </div>
+            </article>
+
+            <!-- Product 8 -->
+            <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+              <div class="product-card__img-wrap">
+                <div aria-hidden="true" style="font-size:5rem;display:flex;align-items:center;justify-content:center;width:100%;height:100%">🦷</div>
+                <button class="product-card__wishlist" aria-label="Wishlist"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Dogs · Health</div>
+                <h3 class="product-card__name" itemprop="name">Dog Dental Chews — Teeth Cleaning (30ct)</h3>
+                <div class="product-card__stars"><span class="stars">★★★★★</span> 4.8 (2,100)</div>
+                <div class="product-card__pricing"><span class="product-card__price">$16.99</span></div>
+                <button class="btn btn-primary btn-sm product-card__add" onclick="addToCart(this,'Dental Chews')">Add to Cart</button>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Load More -->
+          <div style="text-align:center; margin-top:48px;">
+            <button class="btn btn-outline-teal btn-lg" onclick="loadMore(this)">
+              Load More Products
+            </button>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand-logo">🐾 Paw<span>Haven</span></div>
+          <p class="footer__brand-text">Premium pet supplies for every pet in your family. Free shipping on orders over $35.</p>
+          <div class="footer__socials">
+            <button class="footer__social-btn" aria-label="Instagram">📸</button>
+            <button class="footer__social-btn" aria-label="Facebook">👍</button>
+            <button class="footer__social-btn" aria-label="TikTok">🎵</button>
+            <button class="footer__social-btn" aria-label="Pinterest">📌</button>
+          </div>
+        </div>
+        <nav aria-label="Shop">
+          <div class="footer__col-title">Shop</div>
+          <ul class="footer__links">
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="products.html?cat=dogs">Dog Supplies</a></li>
+            <li><a href="products.html?cat=cats">Cat Supplies</a></li>
+            <li><a href="products.html?sale=1">Sale Items</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Help">
+          <div class="footer__col-title">Help</div>
+          <ul class="footer__links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Company">
+          <div class="footer__col-title">Company</div>
+          <ul class="footer__links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 PawHaven. All rights reserved.</span>
+        <div class="footer__payments">
+          <span class="footer__payment-badge">VISA</span>
+          <span class="footer__payment-badge">MC</span>
+          <span class="footer__payment-badge">PayPal</span>
+          <span class="footer__payment-badge">Shop Pay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" style="position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--navy);color:white;padding:14px 24px;border-radius:40px;font-size:.88rem;font-weight:600;box-shadow:0 8px 32px rgba(0,0,0,.2);transition:transform .3s ease,opacity .3s ease;opacity:0;z-index:9999;white-space:nowrap;pointer-events:none;" role="status" aria-live="polite"></div>
+
+  <script>
+    // Price range display
+    const range = document.getElementById('price-range');
+    const display = document.getElementById('price-display');
+    if (range) {
+      range.addEventListener('input', () => {
+        display.textContent = range.value == 200 ? 'Any price' : `Up to $${range.value}`;
+      });
+    }
+    function clearFilters() {
+      document.querySelectorAll('.filter-option input').forEach(i => i.checked = false);
+      showToast('Filters cleared');
+    }
+    function loadMore(btn) {
+      btn.textContent = 'Loading…';
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.textContent = 'No more products to load';
+        btn.disabled = true;
+        btn.style.opacity = '.5';
+      }, 1200);
+    }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>PawHaven — Premium Pet Supplies Online | Free Shipping on Orders $35+</title>
+  <meta name="description" content="Shop premium pet supplies for dogs, cats, birds, and small animals at PawHaven. Discover vet-recommended food, toys, accessories, and grooming products. Free shipping on orders over $35." />
+  <meta name="keywords" content="pet supplies, dog accessories, cat toys, pet food, pet grooming, online pet store, cheap pet supplies, best pet products" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://pawhaven.store/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="PawHaven — Premium Pet Supplies Online" />
+  <meta property="og:description" content="Everything your pet deserves. Shop premium food, toys, accessories & more with free shipping over $35." />
+  <meta property="og:url"         content="https://pawhaven.store/" />
+  <meta property="og:image"       content="https://pawhaven.store/img/og-home.jpg" />
+  <meta property="og:site_name"   content="PawHaven" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="PawHaven — Premium Pet Supplies Online" />
+  <meta name="twitter:description" content="Everything your pet deserves. Free shipping on orders over $35." />
+  <meta name="twitter:image"       content="https://pawhaven.store/img/og-home.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PawHaven",
+    "url": "https://pawhaven.store",
+    "logo": "https://pawhaven.store/img/logo.png",
+    "description": "Premium pet supplies online store offering food, toys, accessories, and grooming products for dogs, cats, birds, and small animals.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-800-PAW-HAVEN",
+      "contactType": "customer service",
+      "availableLanguage": "English"
+    },
+    "sameAs": [
+      "https://instagram.com/pawhaven",
+      "https://facebook.com/pawhaven",
+      "https://tiktok.com/@pawhaven"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: WebSite (Sitelinks Searchbox) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PawHaven",
+    "url": "https://pawhaven.store",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://pawhaven.store/products.html?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Favicons -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVBAR
+  ====================================================== -->
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <div class="navbar__inner">
+
+          <!-- Logo -->
+          <a class="navbar__logo" href="index.html" aria-label="PawHaven Home">
+            🐾 Paw<span>Haven</span>
+          </a>
+
+          <!-- Nav Links -->
+          <ul class="navbar__links" role="menubar">
+            <li role="none"><a href="index.html"    class="active" role="menuitem">Home</a></li>
+            <li role="none"><a href="products.html"           role="menuitem">Shop All</a></li>
+            <li role="none"><a href="products.html?cat=dogs"  role="menuitem">Dogs</a></li>
+            <li role="none"><a href="products.html?cat=cats"  role="menuitem">Cats</a></li>
+            <li role="none"><a href="about.html"              role="menuitem">About</a></li>
+            <li role="none"><a href="contact.html"            role="menuitem">Contact</a></li>
+          </ul>
+
+          <!-- Actions -->
+          <div class="navbar__actions">
+            <!-- Search -->
+            <form class="navbar__search" role="search" action="products.html" method="get">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              <input type="search" name="q" placeholder="Search products…" aria-label="Search products" />
+            </form>
+
+            <!-- Wishlist -->
+            <button class="navbar__icon-btn" aria-label="Wishlist">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+
+            <!-- Cart -->
+            <button class="navbar__icon-btn" aria-label="Shopping cart, 0 items" id="cart-btn">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              <span class="navbar__cart-count" id="cart-count" aria-live="polite">0</span>
+            </button>
+
+            <!-- Hamburger -->
+            <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="navbar__mobile-menu" id="mobile-menu" role="menu">
+        <a href="index.html"    role="menuitem">🏠 Home</a>
+        <a href="products.html" role="menuitem">🛍️ Shop All</a>
+        <a href="products.html?cat=dogs" role="menuitem">🐶 Dogs</a>
+        <a href="products.html?cat=cats" role="menuitem">🐱 Cats</a>
+        <a href="about.html"   role="menuitem">💚 About Us</a>
+        <a href="contact.html" role="menuitem">📬 Contact</a>
+        <a href="products.html" class="btn btn-primary">Shop Now →</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ======================================================
+         HERO
+    ====================================================== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero__inner">
+
+          <!-- Copy -->
+          <div class="hero__copy">
+            <div class="hero__eyebrow">
+              <span>⭐</span> Trusted by 50,000+ pet parents
+            </div>
+
+            <h1 class="hero__title" id="hero-heading">
+              Everything Your<br/>
+              <em>Pet Deserves</em>,<br/>
+              Delivered Fast
+            </h1>
+
+            <p class="hero__subtitle">
+              Premium food, toys, accessories, and grooming supplies for dogs, cats, birds, and small animals — all in one place.
+            </p>
+
+            <div class="hero__ctas">
+              <a href="products.html" class="btn btn-primary btn-lg">
+                Shop Now
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="about.html" class="btn btn-outline-teal btn-lg">Our Story</a>
+            </div>
+
+            <div class="hero__stats">
+              <div>
+                <div class="hero__stat-num">50K+</div>
+                <div class="hero__stat-label">Happy Pets</div>
+              </div>
+              <div>
+                <div class="hero__stat-num">1,200+</div>
+                <div class="hero__stat-label">Products</div>
+              </div>
+              <div>
+                <div class="hero__stat-num">4.9★</div>
+                <div class="hero__stat-label">Avg. Rating</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="hero__image-wrap">
+            <div class="hero__img" role="img" aria-label="Happy pets with PawHaven products">🐾</div>
+
+            <div class="hero__badge-float hero__badge-float--tl">
+              <span class="hero__badge-icon">🚚</span>
+              <div>
+                <div class="hero__badge-text">Free Shipping</div>
+                <div class="hero__badge-sub">On orders over $35</div>
+              </div>
+            </div>
+
+            <div class="hero__badge-float hero__badge-float--br">
+              <span class="hero__badge-icon">🛡️</span>
+              <div>
+                <div class="hero__badge-text">30-Day Returns</div>
+                <div class="hero__badge-sub">No questions asked</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         TRUST BAR
+    ====================================================== -->
+    <div class="trust-bar" role="complementary" aria-label="Store guarantees">
+      <div class="container">
+        <div class="trust-bar__inner">
+          <div class="trust-bar__item">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8zM5.5 21a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM18.5 21a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg>
+            <span>Free Shipping on $35+</span>
+          </div>
+          <div class="trust-bar__item">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>30-Day Money Back Guarantee</span>
+          </div>
+          <div class="trust-bar__item">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>Vet-Approved Products</span>
+          </div>
+          <div class="trust-bar__item">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 6 6l1.27-.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>24/7 Customer Support</span>
+          </div>
+          <div class="trust-bar__item">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span>Secure Checkout</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================
+         CATEGORIES
+    ====================================================== -->
+    <section class="section" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Browse by Pet</span>
+          <h2 class="section-title" id="categories-heading">Shop by Category</h2>
+          <p class="section-subtitle">Find exactly what your furry, feathered, or scaly friend needs.</p>
+        </div>
+
+        <div class="categories__grid">
+          <a href="products.html?cat=dogs" class="category-card category-card--dogs" aria-label="Shop dog supplies">
+            <div class="category-card__bg" aria-hidden="true">🐶</div>
+            <div class="category-card__overlay"></div>
+            <div class="category-card__content">
+              <div class="category-card__title">Dogs</div>
+              <div class="category-card__count">320+ products</div>
+            </div>
+          </a>
+          <a href="products.html?cat=cats" class="category-card category-card--cats" aria-label="Shop cat supplies">
+            <div class="category-card__bg" aria-hidden="true">🐱</div>
+            <div class="category-card__overlay"></div>
+            <div class="category-card__content">
+              <div class="category-card__title">Cats</div>
+              <div class="category-card__count">280+ products</div>
+            </div>
+          </a>
+          <a href="products.html?cat=birds" class="category-card category-card--birds" aria-label="Shop bird supplies">
+            <div class="category-card__bg" aria-hidden="true">🐦</div>
+            <div class="category-card__overlay"></div>
+            <div class="category-card__content">
+              <div class="category-card__title">Birds</div>
+              <div class="category-card__count">140+ products</div>
+            </div>
+          </a>
+          <a href="products.html?cat=small" class="category-card category-card--small" aria-label="Shop small animal supplies">
+            <div class="category-card__bg" aria-hidden="true">🐹</div>
+            <div class="category-card__overlay"></div>
+            <div class="category-card__content">
+              <div class="category-card__title">Small Animals</div>
+              <div class="category-card__count">90+ products</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         FEATURED PRODUCTS
+    ====================================================== -->
+    <section class="section section--light" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="products__header">
+          <div>
+            <span class="section-label">Handpicked for You</span>
+            <h2 class="section-title" id="featured-heading">Bestsellers This Week</h2>
+          </div>
+          <a href="products.html" class="btn btn-outline-teal">View All Products →</a>
+        </div>
+
+        <div class="products__grid" role="list" aria-label="Featured products">
+
+          <!-- Product 1 -->
+          <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+            <div class="product-card__img-wrap">
+              <div aria-hidden="true" style="font-size:5rem;display:flex;align-items:center;justify-content:center;width:100%;height:100%;">🦮</div>
+              <div class="product-card__badges">
+                <span class="badge badge-best">Bestseller</span>
+              </div>
+              <button class="product-card__wishlist" aria-label="Add Comfort Harness Pro to wishlist">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__category">Dogs · Harnesses</div>
+              <h3 class="product-card__name" itemprop="name">Comfort Harness Pro — No-Pull Design</h3>
+              <div class="product-card__stars">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                  <meta itemprop="ratingValue" content="4.9"/>
+                  <meta itemprop="reviewCount" content="2341"/>
+                  4.9 (2,341)
+                </span>
+              </div>
+              <div class="product-card__pricing">
+                <span class="product-card__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="price" content="24.99"/>
+                  <meta itemprop="priceCurrency" content="USD"/>
+                  $24.99
+                </span>
+                <span class="product-card__compare">$39.99</span>
+                <span class="product-card__discount">−38%</span>
+              </div>
+              <button class="btn btn-primary btn-sm product-card__add" onclick="addToCart(this, 'Comfort Harness Pro')">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+            <div class="product-card__img-wrap">
+              <div aria-hidden="true" style="font-size:5rem;display:flex;align-items:center;justify-content:center;width:100%;height:100%;">🧶</div>
+              <div class="product-card__badges">
+                <span class="badge badge-new">New</span>
+              </div>
+              <button class="product-card__wishlist" aria-label="Add Interactive Cat Wand to wishlist">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__category">Cats · Toys</div>
+              <h3 class="product-card__name" itemprop="name">Interactive Feather Wand XL</h3>
+              <div class="product-card__stars">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                  <meta itemprop="ratingValue" content="4.8"/>
+                  <meta itemprop="reviewCount" content="1087"/>
+                  4.8 (1,087)
+                </span>
+              </div>
+              <div class="product-card__pricing">
+                <span class="product-card__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="price" content="14.99"/>
+                  <meta itemprop="priceCurrency" content="USD"/>
+                  $14.99
+                </span>
+              </div>
+              <button class="btn btn-primary btn-sm product-card__add" onclick="addToCart(this, 'Interactive Feather Wand XL')">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+            <div class="product-card__img-wrap">
+              <div aria-hidden="true" style="font-size:5rem;display:flex;align-items:center;justify-content:center;width:100%;height:100%;">🍖</div>
+              <div class="product-card__badges">
+                <span class="badge badge-sale">Sale</span>
+              </div>
+              <button class="product-card__wishlist" aria-label="Add Natural Dog Treats to wishlist">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__category">Dogs · Treats</div>
+              <h3 class="product-card__name" itemprop="name">Grain-Free Natural Dog Treats (12oz)</h3>
+              <div class="product-card__stars">
+                <span class="stars" aria-hidden="true">★★★★★</span>
+                <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                  <meta itemprop="ratingValue" content="4.9"/>
+                  <meta itemprop="reviewCount" content="3892"/>
+                  4.9 (3,892)
+                </span>
+              </div>
+              <div class="product-card__pricing">
+                <span class="product-card__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="price" content="12.99"/>
+                  <meta itemprop="priceCurrency" content="USD"/>
+                  $12.99
+                </span>
+                <span class="product-card__compare">$18.99</span>
+                <span class="product-card__discount">−32%</span>
+              </div>
+              <button class="btn btn-primary btn-sm product-card__add" onclick="addToCart(this, 'Grain-Free Dog Treats')">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+            <div class="product-card__img-wrap">
+              <div aria-hidden="true" style="font-size:5rem;display:flex;align-items:center;justify-content:center;width:100%;height:100%;">🛁</div>
+              <button class="product-card__wishlist" aria-label="Add Self-Cleaning Brush to wishlist">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__category">All Pets · Grooming</div>
+              <h3 class="product-card__name" itemprop="name">Self-Cleaning Slicker Brush</h3>
+              <div class="product-card__stars">
+                <span class="stars" aria-hidden="true">★★★★½</span>
+                <span itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                  <meta itemprop="ratingValue" content="4.7"/>
+                  <meta itemprop="reviewCount" content="654"/>
+                  4.7 (654)
+                </span>
+              </div>
+              <div class="product-card__pricing">
+                <span class="product-card__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <meta itemprop="price" content="19.99"/>
+                  <meta itemprop="priceCurrency" content="USD"/>
+                  $19.99
+                </span>
+                <span class="product-card__compare">$29.99</span>
+                <span class="product-card__discount">−33%</span>
+              </div>
+              <button class="btn btn-primary btn-sm product-card__add" onclick="addToCart(this, 'Self-Cleaning Slicker Brush')">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         WHY PAWHAVEN
+    ====================================================== -->
+    <section class="section" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Why PawHaven?</span>
+          <h2 class="section-title" id="features-heading">We Go the Extra Paw</h2>
+          <p class="section-subtitle">We're not just a pet store — we're pet parents too. Here's our promise to you.</p>
+        </div>
+
+        <div class="features__grid">
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🧪</div>
+            <h3 class="feature-card__title">Vet-Approved Selection</h3>
+            <p class="feature-card__text">Every product in our catalog has been reviewed and approved by licensed veterinarians. We only stock what we'd give our own pets.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🚚</div>
+            <h3 class="feature-card__title">Fast & Free Shipping</h3>
+            <p class="feature-card__text">Free shipping on all orders over $35. Most orders ship within 24 hours and arrive in 3–5 business days across the US.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">💰</div>
+            <h3 class="feature-card__title">Best Price Guarantee</h3>
+            <p class="feature-card__text">Found it cheaper elsewhere? We'll match the price and give you an extra 5% off. Premium quality doesn't have to break the bank.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🔄</div>
+            <h3 class="feature-card__title">Hassle-Free Returns</h3>
+            <p class="feature-card__text">Not happy? Return any item within 30 days for a full refund, no questions asked. Your pet's satisfaction is our top priority.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🌿</div>
+            <h3 class="feature-card__title">Eco-Friendly Packaging</h3>
+            <p class="feature-card__text">We use 100% recyclable and biodegradable packaging. Good for your pet, good for the planet — because they share the same world.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🎁</div>
+            <h3 class="feature-card__title">Loyalty Rewards</h3>
+            <p class="feature-card__text">Earn PawPoints on every purchase. Redeem them for discounts, free products, and exclusive member-only deals. Every pet deserves more.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         TESTIMONIALS
+    ====================================================== -->
+    <section class="section section--cream" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Real Reviews</span>
+          <h2 class="section-title" id="reviews-heading">50,000+ Happy Pet Families</h2>
+          <p class="section-subtitle">Don't take our word for it — hear from the real pet parents who shop with us every day.</p>
+        </div>
+
+        <div class="testimonials__grid">
+
+          <article class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-card__text" itemprop="reviewBody">
+              "The Comfort Harness Pro changed our walks completely. Max used to pull so hard it was impossible — now he trots right beside me. Amazing quality for the price!"
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">👩</div>
+              <div>
+                <div class="testimonial-card__name" itemprop="author">Sarah M.</div>
+                <div class="testimonial-card__meta">Golden Retriever mom · Texas</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-card__text" itemprop="reviewBody">
+              "Fast shipping, great prices, and my cats absolutely love the feather wand! Ordered on Monday and it was at my door Wednesday. Will definitely be a repeat customer."
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">👨</div>
+              <div>
+                <div class="testimonial-card__name" itemprop="author">James L.</div>
+                <div class="testimonial-card__meta">3 cats · California</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-card__text" itemprop="reviewBody">
+              "I love that all products are vet-approved. As a first-time dog owner I was nervous about what to buy — the team helped me pick the right food and treats. Highly recommend!"
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">👩</div>
+              <div>
+                <div class="testimonial-card__name" itemprop="author">Priya K.</div>
+                <div class="testimonial-card__meta">Labrador mom · New York</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         NEWSLETTER
+    ====================================================== -->
+    <section class="section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter__inner">
+          <div>
+            <span class="section-label" style="color:rgba(255,255,255,.75)">Join the Pack</span>
+            <h2 class="newsletter__title" id="newsletter-heading">Get 15% Off Your First Order</h2>
+            <p class="newsletter__subtitle">Sign up for pet care tips, exclusive deals, and new product alerts. No spam, just paw-some content.</p>
+          </div>
+          <div>
+            <form class="newsletter__form" onsubmit="handleNewsletter(event)" novalidate aria-label="Newsletter signup">
+              <div class="newsletter__row">
+                <input class="newsletter__input" type="email" placeholder="Your email address" aria-label="Email address" required />
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+              <p class="newsletter__note">🔒 We respect your privacy. Unsubscribe at any time.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+
+        <!-- Brand -->
+        <div>
+          <div class="footer__brand-logo">🐾 Paw<span>Haven</span></div>
+          <p class="footer__brand-text">
+            Your one-stop online pet store for premium food, toys, accessories, and grooming products. Everything your pet deserves, delivered fast.
+          </p>
+          <div class="footer__socials" aria-label="Follow us on social media">
+            <button class="footer__social-btn" aria-label="Follow on Instagram">📸</button>
+            <button class="footer__social-btn" aria-label="Follow on Facebook">👍</button>
+            <button class="footer__social-btn" aria-label="Follow on TikTok">🎵</button>
+            <button class="footer__social-btn" aria-label="Follow on Pinterest">📌</button>
+          </div>
+        </div>
+
+        <!-- Shop -->
+        <nav aria-label="Shop navigation">
+          <div class="footer__col-title">Shop</div>
+          <ul class="footer__links">
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="products.html?cat=dogs">Dog Supplies</a></li>
+            <li><a href="products.html?cat=cats">Cat Supplies</a></li>
+            <li><a href="products.html?cat=birds">Bird Supplies</a></li>
+            <li><a href="products.html?cat=small">Small Animals</a></li>
+            <li><a href="products.html?sale=1">Sale Items</a></li>
+          </ul>
+        </nav>
+
+        <!-- Help -->
+        <nav aria-label="Help navigation">
+          <div class="footer__col-title">Help</div>
+          <ul class="footer__links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">Track My Order</a></li>
+            <li><a href="#">Size Guides</a></li>
+          </ul>
+        </nav>
+
+        <!-- Company -->
+        <nav aria-label="Company navigation">
+          <div class="footer__col-title">Company</div>
+          <ul class="footer__links">
+            <li><a href="about.html">About PawHaven</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 PawHaven. All rights reserved. Made with 🐾 for pet lovers.</span>
+        <div class="footer__payments" aria-label="Accepted payment methods">
+          <span class="footer__payment-badge">VISA</span>
+          <span class="footer__payment-badge">MC</span>
+          <span class="footer__payment-badge">AMEX</span>
+          <span class="footer__payment-badge">PayPal</span>
+          <span class="footer__payment-badge">Shop Pay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div id="toast" style="
+    position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(80px);
+    background:var(--navy); color:white; padding:14px 24px; border-radius:40px;
+    font-size:.88rem; font-weight:600; box-shadow:0 8px 32px rgba(0,0,0,.2);
+    transition:transform .3s ease, opacity .3s ease; opacity:0; z-index:9999;
+    white-space:nowrap; pointer-events:none;
+  " role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
